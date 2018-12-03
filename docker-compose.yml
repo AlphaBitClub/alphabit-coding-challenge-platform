@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  mariadb:
+    image: mariadb:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootpw
+      - MYSQL_USER=domjudge
+      - MYSQL_PASSWORD=djpw
+      - MYSQL_DATABASE=domjudge
+    volumes:
+      - domjudge_mariadb:/var/lib/mysql
+  
+  domserver:
+    build: .
+    image: domserver_wait:0.1
+    environment:
+      - MYSQL_HOST=mariadb
+      - MYSQL_ROOT_PASSWORD=rootpw
+      - MYSQL_USER=domjudge
+      - MYSQL_PASSWORD=djpw
+      - MYSQL_DATABASE=domjudge
+      - WAIT_HOSTS=mariadb:3306
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    ports:
+      - 80:80
+    depends_on:
+      - mariadb
+
+volumes:
+  domjudge_mariadb:
