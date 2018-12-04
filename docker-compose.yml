@@ -12,7 +12,9 @@ services:
       - domjudge_mariadb:/var/lib/mysql
   
   domserver:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile_domserver
     image: domserver_wait:0.1
     environment:
       - MYSQL_HOST=mariadb
@@ -27,6 +29,22 @@ services:
       - 80:80
     depends_on:
       - mariadb
+
+  judgehost:
+    build:
+      context: .
+      dockerfile: Dockerfile_judgehost
+    image: judgehost_wait:0.1
+    environment:
+      - JUDGEDAEMON_USERNAME=judgehost
+      - JUDGEDAEMON_PASSWORD=password
+      - WAIT_HOSTS=domserver:80
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    depends_on:
+      - domserver
+    privileged: true
+
 
 volumes:
   domjudge_mariadb:
