@@ -2,7 +2,7 @@ version: '3'
 
 services:
   mariadb:
-    image: mariadb:latest
+    image: mariadb:10.2
     environment:
       - MYSQL_ROOT_PASSWORD=rootpw
       - MYSQL_USER=domjudge
@@ -12,11 +12,9 @@ services:
       - domjudge_mariadb:/var/lib/mysql
   
   domserver:
-    build:
-      context: .
-      dockerfile: Dockerfile_domserver
-    image: domserver_wait:0.1
+    image: alphabit_domserver:0.1
     environment:
+      - CONTAINER_TIMEZONE=Africa/Algiers
       - MYSQL_HOST=mariadb
       - MYSQL_ROOT_PASSWORD=rootpw
       - MYSQL_USER=domjudge
@@ -31,13 +29,14 @@ services:
       - mariadb
 
   judgehost:
-    build:
-      context: .
-      dockerfile: Dockerfile_judgehost
-    image: judgehost_wait:0.1
+    image: alphabit_judgehost:0.1
+    hostname: alphabit_judgehost0
     environment:
+      - CONTAINER_TIMEZONE=Africa/Algiers
       - JUDGEDAEMON_USERNAME=judgehost
       - JUDGEDAEMON_PASSWORD=password
+      - DOMSERVER_BASEURL=http://domserver/
+      - DAEMON_ID=0
       - WAIT_HOSTS=domserver:80
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro

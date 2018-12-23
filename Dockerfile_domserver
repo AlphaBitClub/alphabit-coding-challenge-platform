@@ -1,7 +1,7 @@
 FROM domjudge/domserver:latest
 
 ## wait wrapper
-ADD https://github.com/ufoscout/docker-compose-wait/releases/download/2.4.0/wait /wait
-RUN chmod +x /wait
+ADD https://github.com/ufoscout/docker-compose-wait/releases/download/2.4.0/wait /opt/wait
+RUN chmod +x /opt/wait
 
-CMD /wait && /scripts/start.sh
+CMD /opt/wait && /scripts/start.sh

@@ -6,7 +6,13 @@ RUN apt-get update \
     python3
 
 ## wait wrapper
-ADD https://github.com/ufoscout/docker-compose-wait/releases/download/2.4.0/wait /wait
-RUN chmod +x /wait
+ADD https://github.com/ufoscout/docker-compose-wait/releases/download/2.4.0/wait /opt/wait
+RUN chmod +x /opt/wait
 
-CMD /wait && /scripts/start.sh
+# copy the chroot scripts in order to install additional deps
+COPY judgehost_chroot.sh /opt/judgehost_chroot.sh
+COPY judgehost_chroot_install_deps.sh /opt/judgehost_chroot_install_deps.sh
+RUN chmod +x /opt/judgehost_chroot.sh
+RUN chmod +x /opt/judgehost_chroot_install_deps.sh
+
+CMD /opt/wait && /scripts/start.sh
