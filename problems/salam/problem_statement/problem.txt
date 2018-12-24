@@ -1,1 +1,1 @@
-Print "Salam Alaykom!"
+Print "Hello World!"
