@@ -1,0 +1,8 @@
+Queries:
+Add book_name score: add the book to the stack
+Give: pop the most recent book from the stack
+Best: print the name of the book with the highest rating in the stack
+
+Input:
+the first line contains N the number of queries
+the next N lines each contain a querie.
