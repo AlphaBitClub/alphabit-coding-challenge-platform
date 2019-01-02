@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# Go compile wrapper-script for 'compile.sh'.
+# See that script for syntax and more info.
+
+DEST="$1" ; shift
+MEMLIMIT="$1" ; shift
+
+# Add -DONLINE_JUDGE or -DDOMJUDGE below if you want it make easier for teams
+# to do local debugging.
+
+# -o:       output binary name
+go build -o "$DEST" "$@"
+exit $?
