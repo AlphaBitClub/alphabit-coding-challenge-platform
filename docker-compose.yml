@@ -12,7 +12,7 @@ services:
       - domjudge_mariadb:/var/lib/mysql
   
   domserver:
-    image: alphabit_domserver:0.1
+    image: alphabit_domserver:0.2
     environment:
       - CONTAINER_TIMEZONE=Africa/Algiers
       - MYSQL_HOST=mariadb
@@ -29,7 +29,7 @@ services:
       - mariadb
 
   judgehost:
-    image: alphabit_judgehost:0.1
+    image: alphabit_judgehost:0.2
     hostname: alphabit_judgehost0
     environment:
       - CONTAINER_TIMEZONE=Africa/Algiers
