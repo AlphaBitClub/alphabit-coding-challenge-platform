@@ -1,0 +1,77 @@
+---
+name: alphabit coding challenge
+short-name: alphabit coding challenge
+start-time: 2019-01-02T00:00:00+01:00
+duration: 720:00:00
+scoreboard-freeze-duration: 24:00:00
+penalty-time: 20
+default-clars:
+  - No comment
+  - Read the problem statement carefully
+clar-categories:
+  - General issue
+  - Technical issue
+languages:
+  - 
+    name: Ada
+  - 
+    name: AWK
+  - 
+    name: Bash shell
+  - 
+    name: C
+  - 
+    name: C++
+  - 
+    name: 'C#'
+  - 
+    name: Fortran
+  - 
+    name: Go
+  - 
+    name: Haskell
+  - 
+    name: Java
+  - 
+    name: JavaScript
+  - 
+    name: Kotlin
+  - 
+    name: Lua
+  - 
+    name: Pascal
+  - 
+    name: Perl
+  - 
+    name: Prolog
+  - 
+    name: Python 2
+  - 
+    name: Python 3
+  - 
+    name: Ruby
+  - 
+    name: Scala
+  - 
+    name: POSIX shell
+problems:
+  - 
+    label: hello
+    name: Hello World
+    color: lime
+    rgb: '#17ff17'
+  - 
+    label: small_sum
+    name: Small Sum
+    color: null
+    rgb: null
+  - 
+    label: bookgiving
+    name: Book Giving
+    color: null
+    rgb: null
+  - 
+    label: multiples
+    name: Count The Multiples
+    color: null
+    rgb: null
