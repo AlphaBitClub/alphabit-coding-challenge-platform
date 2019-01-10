@@ -1,1 +1,1 @@
-# AlphaBit Club HackTheBigO
+# AlphaBit Club Coding Contest
