@@ -1,0 +1,7 @@
+1st line: N the number of data
+the next N lines: each line is the size of a data
+
+Task: find the memory size that can store all the given data
+    : memory size must be a power of two
+
+constraint: the sum the given data sizes < 2**31
