@@ -1,2 +1,5 @@
 # IDEs and Text Editors
 .vscode
+
+# mac os rubbish
+.DS_Store
