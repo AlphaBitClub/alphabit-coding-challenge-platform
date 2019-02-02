@@ -1,0 +1,8 @@
+1st line: N the number of initial cells
+the next N lines: each X line is the number of rabbits in the X Cell
+
+Task: find the number of rabbits in the final cell
+
+constraint: the number of rabbits in the initial cells < 2**31
+
+Note: N can be a large number
