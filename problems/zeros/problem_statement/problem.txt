@@ -1,0 +1,8 @@
+1st line: N the number of integers
+the next N lines: each contains a single integer X_i
+
+Task: find the number of trailing zeros of the product of this integers
+
+constraint: 0 < X_i < 2**31
+
+Note: N can be a large number
