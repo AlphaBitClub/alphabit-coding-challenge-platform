@@ -21,6 +21,7 @@ services:
       - MYSQL_PASSWORD=djpw
       - MYSQL_DATABASE=domjudge
       - WAIT_HOSTS=mariadb:3306
+      - WAIT_HOSTS_TIMEOUT=60
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
     ports:
@@ -38,6 +39,7 @@ services:
       - DOMSERVER_BASEURL=http://domserver/
       - DAEMON_ID=0
       - WAIT_HOSTS=domserver:80
+      - WAIT_HOSTS_TIMEOUT=60
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
     depends_on:
