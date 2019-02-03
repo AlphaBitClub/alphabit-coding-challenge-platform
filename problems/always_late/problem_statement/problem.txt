@@ -1,0 +1,19 @@
+Input:
+---
+1st line: contains 4 space separated integers (N, T, C, D)
+N the number of train stations
+T train speed (km/h)
+C car speed (km/h)
+D delay time in (min)
+the next N lines: each contains a single integer S_i the distance of the ith station
+
+Task:
+---
+Print the station number which you should get off at,
+where the your wait time is minimal
+
+
+Constraint:
+---
+D > 0
+C > T
