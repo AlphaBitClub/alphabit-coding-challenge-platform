@@ -5,8 +5,8 @@ single line contains the number N
 Task
 ---
 Find the sum of 1+2+3+4+...+N
-Print result mod 10^9+7
 
 Note
 ---
 N can be a large number
+we guarantee that the sum is < 2^63
