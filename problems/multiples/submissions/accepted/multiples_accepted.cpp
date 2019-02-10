@@ -2,20 +2,18 @@
 
 using namespace std;
 
-#define P 1000000007;
-
-unsigned long calc_multiples(unsigned long x, unsigned long n)
+long calc_multiples(long x, long n)
 {
-    unsigned long multi_num = n / x;
-    unsigned long sum = (multi_num * (multi_num + 1) / 2) % P;
-    sum = (sum * x) % P;
+    long multi_num = n / x;
+    long sum = multi_num * (multi_num + 1) / 2;
+    sum = sum * x;
     return sum;
 }
 
 int main(int argc, char const *argv[])
 {
-    unsigned long x, y, n, s;
-    unsigned long mx, my, mxy;
+    long x, y, n, s;
+    long mx, my, mxy;
     cin >> x >> y;
     cin >> n;
 
@@ -23,7 +21,7 @@ int main(int argc, char const *argv[])
     my = calc_multiples(y, n);
     mxy = calc_multiples(x * y, n);
 
-    s = (mx + my - mxy) % P;
+    s = mx + my - mxy;
     cout << s << endl;
     return 0;
 }
