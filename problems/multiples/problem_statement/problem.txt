@@ -1,3 +1,4 @@
 Given X, Y and N,
 find the sum of the distinctes multiples Mi of X, Y
 such that Mi <= N.
+we guarantee that Mi is < 2^63

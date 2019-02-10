@@ -1,17 +1,15 @@
 #include <stdio.h>
 
-#define P 1000000007
-
 int main(int argc, char const *argv[])
 {
-    int n;
+    long n;
     // INPUT
-    scanf("%d", &n);
+    scanf("%ld", &n);
 
     // summation formula
-    int s = (n * (n+1) / 2) % P;
+    long s = n * (n+1) / 2;
     
     // OUTPUT
-    printf("%d", s);
+    printf("%ld", s);
     return 0;
 }

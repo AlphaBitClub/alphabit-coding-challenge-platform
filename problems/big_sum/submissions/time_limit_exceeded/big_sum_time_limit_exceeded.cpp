@@ -4,10 +4,10 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    int n;
+    long n;
     cin >> n;
-    int s = 0;
-    for (int i = 0; i <= n; i++){
+    long s = 0;
+    for (long i = 0; i <= n; i++){
         s += i;
     }
     cout << s << endl;

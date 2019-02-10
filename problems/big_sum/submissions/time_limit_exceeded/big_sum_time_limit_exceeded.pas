@@ -1,5 +1,5 @@
 program small_sum;
-var i, n, s: LongInt;
+var i, n, s: int64;
 begin
     readln(n);
     s := 0;

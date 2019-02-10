@@ -1,6 +1,4 @@
-# print result mod 10^9+7
-P = pow(10, 9) + 7
-
+# INPUT
 x, y = map(int, input().split())
 n = int(input())
 
@@ -13,7 +11,7 @@ n = int(input())
 def calc_multiples(x, n):
     s = 0
     for i in range(0, n+1, x):
-        s = (s + i) % P
+        s += i
     return s
 
 
@@ -25,5 +23,5 @@ my = calc_multiples(y, n)
 mxy = calc_multiples(x*y, n)
 
 # the result is the sum of x and y multiples - the common multiples
-s = (mx + my - mxy) % P
+s = mx + my - mxy
 print(s)

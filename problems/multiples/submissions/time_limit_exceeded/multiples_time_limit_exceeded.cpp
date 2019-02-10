@@ -2,22 +2,20 @@
 
 using namespace std;
 
-#define P 1000000007;
-
-int calc_multiples(int x, int n)
+long calc_multiples(long x, long n)
 {
-    int sum = 0;
-    for (int i = 0; i <= n; i += x)
+    long sum = 0;
+    for (long i = 0; i <= n; i += x)
     {
-        sum = (sum + i) % P;
+        sum += i;
     }
     return sum;
 }
 
 int main(int argc, char const *argv[])
 {
-    int x, y, n, s;
-    int mx, my, mxy;
+    long x, y, n, s;
+    long mx, my, mxy;
     cin >> x >> y;
     cin >> n;
 
@@ -25,7 +23,7 @@ int main(int argc, char const *argv[])
     my = calc_multiples(y, n);
     mxy = calc_multiples(x * y, n);
 
-    s = (mx + my - mxy) % P;
+    s = mx + my - mxy;
     cout << s << endl;
     return 0;
 }

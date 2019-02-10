@@ -1,16 +1,13 @@
 import java.util.Scanner;
 
-public class small_sum_accepted {
-
+public class big_sum_accepted {
     public static void main(String[] args) {
-        final int P = 1000000007;
-
         // INPUT
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+        long n = sc.nextLong();
 
         // summation formula
-        int s = (n * (n + 1) / 2) % P;
+        long s = n * (n + 1) / 2;
 
         // OUTPUT
         System.out.println(s);
