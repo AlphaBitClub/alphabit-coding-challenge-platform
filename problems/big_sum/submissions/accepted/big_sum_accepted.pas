@@ -1,14 +1,13 @@
 program small_sum;
-const P = 1000000007
-var i, n, s: LongInt;
+var i, n, s: int64;
 
 begin
     // INPUT
     readln(n);
 
     // summation formula
-    
-    s := (n * (n+1) / 2) % P;
+    s := n * (n+1) div 2;
+
     // OUPUT
     writeln(s);
 end.

@@ -2,16 +2,14 @@ package main
 
 import "fmt"
 
-const P = 1000000007
-
 func main() {
-	var n int
+	var n, s int64
 	// INPUT
-	fmt.Scanf("%d", &n)	
-	
+	fmt.Scanf("%v", &n)
+
 	// summation formula
-	s := (n * (n+1) / 2) % P
-	
+	s = n * (n + 1) / 2
+
 	// OUTPUT
 	fmt.Println(s)
 }

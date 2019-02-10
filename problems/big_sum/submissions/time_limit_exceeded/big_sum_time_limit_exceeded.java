@@ -1,13 +1,12 @@
 import java.util.Scanner;
 
-public class small_sum_accepted {
+public class big_sum_time_limit_exceeded {
 
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int s = 0;
-        for (int i = 0; i <= n; i++) {
+        long n = sc.nextLong();
+        long s = 0;
+        for (long i = 0; i <= n; i++) {
             s += i;
         }
         System.out.println(s);
