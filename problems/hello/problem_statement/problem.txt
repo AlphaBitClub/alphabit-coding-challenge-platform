@@ -1,8 +1,10 @@
 Practice Problem 1: Hello World
+---
 
 Statement
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The same way every programmer started his/her programming journey, Coding Challenge starts with “Hello World !” !
+Print “Hello World !” using one of these programming languages : Pascal, C, C++ , Java , Go or Python 2/3 and get yourself warmed up and ready for the upcoming challenges !
 
 Input
 ---

@@ -1,12 +1,17 @@
+Problem 1: Big sum
+---
+
+Statement
+---
+Remember solving the Small sum problem ? This is him now, but way bigger !
+Calculate the summation of the first N numbers, pay attention to the huge size of N !
+
 Input
 ---
-single line contains the number N
+A single line containing a positive integer number N.
+0 < N < 2^63
 
-Task
+Output
 ---
-Find the sum of 1+2+3+4+...+N
+A single line containing the sum of N.
 
-Note
----
-N can be a large number
-we guarantee that the sum is < 2^63
