@@ -7,31 +7,17 @@ import (
 
 func main() {
 	// INPUT
-	var n, i int
-	var tmp int64
-	fmt.Scanf("%d", &n)
-	initCells := make([]*big.Int, n)
-	for i = 0; i < n; i++ {
-		fmt.Scanf("%d", &tmp)
-		initCells[i] = big.NewInt(tmp)
-	}
+	var n, k int
+	fmt.Scanf("%d %d", &n, &k)
 
-	// generate the nth tow pascal's triangle
-	binomialCoeffs := make([]*big.Int, n)
-	for i = 0; i < n; i++ {
-		binomialCoeffs[i] = new(big.Int).Binomial(int64(n-1), int64(i))
-	}
+	// the kth coefficient of the nth row of pascal's triangle
+	c := new(big.Int).Binomial(int64(n-1), int64(k-1))
 
-	// cell_1^coef_1 * cell_2^coef_2 * ... * cell_n^coef_n
+	// the number of rabbits with the kth gene is c*k
 	// the result must be % P
-	P := big.NewInt(1000000007)
-	x := new(big.Int) // tmp var
-	finalCell := big.NewInt(1)
-	for i = 0; i < n; i++ {
-		finalCell.Mul(finalCell, x.Exp(initCells[i], binomialCoeffs[i], P))
-		finalCell.Mod(finalCell, P)
-	}
+	K := big.NewInt(int64(k))
+	kth_gene_rabbits_number := new(big.Int).Mul(c, K)
 
 	// OUTPUT
-	fmt.Println(finalCell.String())
+	fmt.Println(kth_gene_rabbits_number.String())
 }
