@@ -1,8 +1,18 @@
-1st line: N the number of initial cells
-the next N lines: each X line is the number of rabbits in the X Cell
+Problem 7: Pascal's Rabbits
+---
 
-Task: find the number of rabbits in the final cell
+Statement
+---
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-constraint: the number of rabbits in the initial cells < 2**31
-
+Input
+---
+single line contains two space separated integers N and K,
+where N is the number of initial cells,
+and K is the index of rabbits race that we want to figure out how many they are in the final cell.
 Note: N can be a large number
+
+Output
+---
+You will print a single line contains the number of rabbits with the kth gene in the final cell.
+Note: the result may be very big, So print make the result mod 10^9+7.
