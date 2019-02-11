@@ -15,4 +15,3 @@ Note: N can be a large number
 Output
 ---
 You will print a single line contains the number of rabbits with the kth gene in the final cell.
-Note: the result may be very big, So print make the result mod 10^9+7.
