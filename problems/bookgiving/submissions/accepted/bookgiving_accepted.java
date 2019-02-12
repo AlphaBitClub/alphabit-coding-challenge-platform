@@ -12,13 +12,12 @@ public class bookgiving_accepted {
         Scanner sc = new Scanner(System.in);
         n = sc.nextInt();
 
-        for (int i = 0; i <= n; i++) {
-            querie = sc.nextLine();
+        for (int i = 0; i < n; i++) {
+            querie = sc.next();
 
-            if (querie.contains("Add")) {
-                String line[] = querie.split("\\s+");
-                book_name = line[1];
-                rating = Integer.parseInt(line[2]);
+            if (querie.equals("Add")) {
+                book_name = sc.next();
+                rating = sc.nextInt();
                 p = new Pair(book_name, rating);
                 book_stack.push(p);
                 if (max_stack.empty() || rating >= max_stack.peek().rating)
