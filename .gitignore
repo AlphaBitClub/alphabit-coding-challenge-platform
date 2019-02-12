@@ -3,3 +3,7 @@
 
 # mac os rubbish
 .DS_Store
+
+# zip files
+problems/*.zip
+executables/go.zip
