@@ -1,7 +1,18 @@
-1st line: N the number of data
+Problem 2: Memory Size
+---
+
+Statement
+---
+We have a diffrent chunks of data, we want to store all of them in one storage drive
+given the size of each chunk of data, can you help us find the minimum size of the storage drive
+such that the size of the storage drive are all in power of 2 (2, 4, 8, 16, ... 512, ... 2048, ...)
+Note: we guarantee that the sum of the given data sizes < 2**31
+
+Input
+---
+1st line: a single integer N the number of data we want to store
 the next N lines: each line is the size of a data
 
-Task: find the memory size that can store all the given data
-    : memory size must be a power of two
-
-constraint: the sum the given data sizes < 2**31
+Output
+---
+Print the minimum size of the storage drive that can store all data
