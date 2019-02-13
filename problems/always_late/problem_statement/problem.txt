@@ -1,19 +1,21 @@
-Input:
+Problem 3: Always late
 ---
-1st line: contains 4 space separated integers (N, T, C, D)
-N the number of train stations
-T train speed (km/h)
-C car speed (km/h)
-D delay time in (min)
-the next N lines: each contains a single integer S_i the distance of the ith station
 
-Task:
+Statement
 ---
-Print the station number which you should get off at,
-where the your wait time is minimal
+Yanis and Aymen are roommates, they need to wake up early every morning to go to school. However, Aymen always fail to wake up in time, and Yanis just hate waiting for him, so whenever Aymen wakes up late, Yanis go out before him and catch the train.
+Fortunately, Aymen owns a car, so whenever Yanis go catch a train before him, he wakes up and drive with his car to school.
+Even if Yanis despise waiting for Aymen, he is a good friend of him, so whenever Aymen start driving with his car, he calls Yanis and ask him to get off the train in the nearest station so that he can catch him up and go to school with him.
+Still, Yanis might need to wait for Aymen again in a train station ! Even if it’s inevitable, can you help lower Yanis's suffering ?
 
 
-Constraint:
+Input
 ---
-D > 0
-C > T
+1st Line contains 4 space separated integers : Number of train stations N , Train speed (km/h) T, Car speed (km/h) C, Delay time in minutes D.
+N lines where each line i contains the distance between between the departure and the train station i.
+
+
+Output
+---
+Number of the station i that Yanis needs to get off the train in.
+
