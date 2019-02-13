@@ -13,8 +13,8 @@ public class always_late {
         for (int i = 0; i < n; i++)
             stations[i] = sc.nextInt();
 
-        int x = (c - t) / (c * d / 60);
-        int s = t * x;
+        int x = (c * d) / (c - t);
+        int s = (t * x) / 60;
 
         for (int i = 1; i < n; i++)
             if (stations[i] > s) {

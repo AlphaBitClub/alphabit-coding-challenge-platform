@@ -8,7 +8,8 @@ for _ in range(n):
 
 # solve the equation tx = cx - cd
 # to find the moment where the car overtake the train
-x = (c - t) / (c*d/60)
+x = (c*d/60) / (c - t)
+
 # s is the the traveled distance
 s = t * x
 

@@ -10,10 +10,9 @@ read(d);
 for i:=1 to n do
  readln(tab[i]) ;
 
+ x := (c * d) div (c - t);
+ s := (t * x) div 60;
 
- x:=(c-t)div(c*d div 60);
-
- s:=t*x;
 j:=2;
  while tab[j]<s do
    j:=j+1;

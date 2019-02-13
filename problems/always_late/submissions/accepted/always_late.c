@@ -11,8 +11,8 @@ int main(int argc, char const *argv[])
         scanf("%d", &stations[i]);
     }
 
-    int x = (c - t) / (c * d / 60);
-    int s = t * x;
+    int x = (c * d) / (c - t);
+    int s = (t * x) / 60;
 
     for (int i = 1; i < n; i++)
         if (stations[i] > s)

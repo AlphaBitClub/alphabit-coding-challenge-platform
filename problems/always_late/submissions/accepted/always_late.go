@@ -15,9 +15,9 @@ func main() {
 
 	// solve the equation tx = cx - cd
 	// to find the moment where the car overtake the train
-	x := (c - t) / (c * d / 60)
+	x := (c * d) / (c - t)
 	// s is the the traveled distance
-	s := t * x
+	s := (t * x) / 60
 
 	// note: list start at 0 but the station numbering starts from 1
 	// if the stations[i] > s we should stop at stations[i-1]
