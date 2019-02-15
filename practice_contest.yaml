@@ -1,0 +1,67 @@
+---
+name: Practice Session
+short-name: Practice Session
+start-time: 2019-02-16T09:30:00+01:00
+duration: 1:00:00
+scoreboard-freeze-duration: 0:15:00
+penalty-time: 20
+default-clars:
+  - No comment
+  - Read the problem statement carefully
+clar-categories:
+  - General issue
+  - Technical issue
+languages:
+  - 
+    name: Ada
+  - 
+    name: AWK
+  - 
+    name: Bash shell
+  - 
+    name: C
+  - 
+    name: C++
+  - 
+    name: 'C#'
+  - 
+    name: Fortran
+  - 
+    name: Go
+  - 
+    name: Haskell
+  - 
+    name: Java
+  - 
+    name: JavaScript
+  - 
+    name: Kotlin
+  - 
+    name: Lua
+  - 
+    name: Pascal
+  - 
+    name: Perl
+  - 
+    name: Prolog
+  - 
+    name: Python 2
+  - 
+    name: Python 3
+  - 
+    name: Ruby
+  - 
+    name: Scala
+  - 
+    name: POSIX shell
+problems:
+  - 
+    label: hello
+    name: Hello World
+    color: lightpink
+    rgb: '#fabebe'
+  - 
+    label: small_sum
+    name: Small Sum
+    color: aquamarine
+    rgb: '#aaffc3'

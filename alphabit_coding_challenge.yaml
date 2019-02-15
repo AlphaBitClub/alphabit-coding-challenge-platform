@@ -1,9 +1,9 @@
 ---
-name: alphabit coding challenge
-short-name: alphabit coding challenge
-start-time: 2019-01-02T00:00:00+01:00
-duration: 720:00:00
-scoreboard-freeze-duration: 24:00:00
+name: AlphaBit Coding Challenge
+short-name: AlphaBit Coding Challenge
+start-time: 2019-02-16T11:30:00+01:00
+duration: 4:00:00
+scoreboard-freeze-duration: 0:30:00
 penalty-time: 20
 default-clars:
   - No comment
@@ -56,22 +56,37 @@ languages:
     name: POSIX shell
 problems:
   - 
-    label: hello
-    name: Hello World
-    color: lime
-    rgb: '#17ff17'
+    label: late
+    name: Always Late
+    color: sienna
+    rgb: '#9A6324'
   - 
-    label: small_sum
-    name: Small Sum
-    color: null
-    rgb: null
+    label: big_sum
+    name: Big Sum
+    color: mediumseagreen
+    rgb: '#3cb44b'
   - 
     label: bookgiving
     name: Book Giving
-    color: null
-    rgb: null
+    color: coral
+    rgb: '#f58231'
+  - 
+    label: memory
+    name: Memory Size
+    color: mediumturquoise
+    rgb: '#42d4f4'
   - 
     label: multiples
     name: Count The Multiples
-    color: null
-    rgb: null
+    color: fuchsia
+    rgb: '#f032e6'
+  - 
+    label: rabbits
+    name: "Pascal's Rabbits"
+    color: crimson
+    rgb: '#e6194B'
+  - 
+    label: zeros
+    name: Zeros
+    color: gold
+    rgb: '#ffe119'
