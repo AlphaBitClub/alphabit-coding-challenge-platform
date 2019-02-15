@@ -4,13 +4,13 @@ Practice Problem 2: Small sum
 Statement
 ---
 Given a positive number N, calculate the summation of the N first integer numbers.
+1 + 2 + 3 + … + (N-1) + N
 
 Input
 ---
-A single line containing a positive integer number N.
-0 < N < 1024
+A single line that contains a positive integer number N.
+0 < N < 1024`
 
 Output
 ---
-A single line containing the sum of N.
-
+A single line that contains the sum of N.
