@@ -4,17 +4,17 @@ Problem 7: Pascal's Rabbits
 Statement
 ---
 in a laboratory to study animals reproduction, rabbits are distributed in  cells according to their races .
-it was observed that if all rabbits(x) in a single cell (Ci) mate with total(y) of the adjacent cell(Ci+1) will give birth 
+it was observed that if all rabbits(x) in a single cell (Ci) mate with total(y) of the adjacent cell(Ci+1) will give birth
 to the sum of robbits in those cells( X+Y of bunny) conserving the initial numbre of this last in each race
-('x' bunny of the race 'Ci' + 'Y' bunny of the race 'Ci+1'  ) .
+('x' bunny of the race 'Ci' + 'Y' bunny of the race 'Ci+1' ).
 
 
 Input
 ---
-single line contains two space separated integers N and K,
+the 1st line contains two space separated integers N and K,
 where N is the number of initial cells,
 and K is the index of rabbits race that we want to figure out how many they are in the final cell.
-Note: N can be a large number
+the 2nd line contains N space separated integers represent the number of rabbits in the initial cells
 
 Output
 ---
