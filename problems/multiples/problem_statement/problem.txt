@@ -1,4 +1,4 @@
-Problem 4: Count The Multiples
+Problem 4: Multiples
 ---
 
 Statement
