@@ -1,1 +1,1 @@
-# AlphaBit Club Coding Contest
+# AlphaBit Coding Challege
