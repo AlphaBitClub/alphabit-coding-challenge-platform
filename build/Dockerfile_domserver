@@ -1,4 +1,4 @@
-FROM domjudge/domserver:latest
+FROM domjudge/domserver:7.1.1
 
 ## wait wrapper
 ADD https://github.com/ufoscout/docker-compose-wait/releases/download/2.4.0/wait /opt/wait

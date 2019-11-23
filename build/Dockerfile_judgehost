@@ -1,18 +1,12 @@
-FROM domjudge/judgehost:latest
+FROM domjudge/judgehost:7.1.1
 
-# install python3 and golang
+# install golang
 RUN apt-get update \
     && apt-get install --no-install-recommends --no-install-suggests -y \
-    python3 golang-go
+    golang-go
 
 ## wait wrapper
 ADD https://github.com/ufoscout/docker-compose-wait/releases/download/2.4.0/wait /opt/wait
 RUN chmod +x /opt/wait
-
-# copy the chroot scripts in order to install additional deps
-COPY judgehost_chroot.sh /opt/judgehost_chroot.sh
-COPY judgehost_chroot_install_deps.sh /opt/judgehost_chroot_install_deps.sh
-RUN chmod +x /opt/judgehost_chroot.sh
-RUN chmod +x /opt/judgehost_chroot_install_deps.sh
 
 CMD /opt/wait && /scripts/start.sh
