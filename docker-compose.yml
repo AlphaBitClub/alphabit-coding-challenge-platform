@@ -1,8 +1,8 @@
-version: '3'
+version: "3"
 
 services:
   mariadb:
-    image: mariadb:10.2
+    image: mariadb:10.4
     environment:
       - MYSQL_ROOT_PASSWORD=rootpw
       - MYSQL_USER=domjudge
@@ -10,9 +10,9 @@ services:
       - MYSQL_DATABASE=domjudge
     volumes:
       - domjudge_mariadb:/var/lib/mysql
-  
+
   domserver:
-    image: alphabit_domserver:0.2
+    image: alphabit_domserver:0.3
     environment:
       - CONTAINER_TIMEZONE=Africa/Algiers
       - MYSQL_HOST=mariadb
@@ -30,7 +30,7 @@ services:
       - mariadb
 
   judgehost:
-    image: alphabit_judgehost:0.2
+    image: alphabit_judgehost:0.3
     hostname: alphabit_judgehost0
     environment:
       - CONTAINER_TIMEZONE=Africa/Algiers
@@ -45,7 +45,6 @@ services:
     depends_on:
       - domserver
     privileged: true
-
 
 volumes:
   domjudge_mariadb:
