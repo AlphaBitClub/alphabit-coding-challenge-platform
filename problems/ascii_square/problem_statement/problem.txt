@@ -1,0 +1,29 @@
+Problem 1: Ascii Square
+---
+
+Statement
+---
+Todo
+
+Input
+---
+Given a char x, print this pattern
+
+
+Output
+---
+example:
+x = 'A'
+A
+
+x = 'B'
+BBB
+BAB
+BBB
+
+x = 'C'
+CCCCC
+CBBBC
+CBABC
+CBBBC
+CCCCC
