@@ -1,4 +1,4 @@
-program simplfied_tetris;
+program ascii_square;
 var i,j,width,x_index,i_distance,j_distance,c_index:integer; x,c:char;line,letters: string;
 
     function index(letters:string;letter:char): integer;

@@ -1,4 +1,4 @@
-Simplfied tetris:
+Simplified tetris:
 ==========
 Statement 
 --------
