@@ -1,0 +1,8 @@
+Simplfied tetris:
+==========
+Statement 
+--------
+Two type of elements :
+**D**: 2*2 block
+**S**: 1 block
+We want the max number of lines we can make in **N** space
