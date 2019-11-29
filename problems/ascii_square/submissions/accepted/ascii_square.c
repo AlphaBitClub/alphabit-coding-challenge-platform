@@ -3,7 +3,8 @@
 int main(int argc, char const *argv[])
 {
 
-    int c, i, j;
+    int i, j;
+    char c;
     scanf("%c", &c);
     int middle = c - 64;
     int len = middle * 2 - 1;
