@@ -1,0 +1,25 @@
+INPUT
+---
+int flow , //water flow 
+
+int n_valves, // the number of valves
+
+string valves_bandwidth, // line of bandwidths of every valve   (Liter/Second)
+
+string delays , // line of delays between valves 
+
+give the number of the  valve that can distribute the water flow in  the shortest time  
+
+flow = "300"
+---
+n_valves = "3"
+---
+valves_bandwidth = "1 2 4"
+---
+delays  = "50 50"
+---
+
+\\result must be the number of the valve
+
+2
+---
