@@ -1,0 +1,24 @@
+Problem: Even Ones
+---
+
+Statement:
+---
+Given a sequence of 1s(ex: 11111), you need to find if we can split this sequence into two smaller sequences where both of them contain an even number of 1s.
+
+Input:
+---
+n: number, the length of the sequence.
+
+Output:
+---
+YES or NO depends on if its possible to split the sequence.
+
+Examples:
+---
+n == 3  NO
+n == 4  YES
+n == 6  YES
+
+PS:
+---
+The challenge seems very easy, it looks like you just need to test if n is even or not, but note that when n == 2 you can't split the sequence even thought n is even in this case
