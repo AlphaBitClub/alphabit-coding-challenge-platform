@@ -1,0 +1,11 @@
+One dimension:
+==========
+Statement 
+--------
+Given a 1 dimensional array, map it into ***(n x m)*** matrix, so given indices ***[i,j]*** you will output the value ***matrix[i,j]***
+
+**inputs** : one_dimension_array, n, m, i, j.
+**output** : matrix[i,j]
+
+*ps*: the indices of the matrix starts from 0
+
