@@ -7,3 +7,6 @@
 # zip files
 problems/*.zip
 executables/go.zip
+
+# python
+__pycache__/
