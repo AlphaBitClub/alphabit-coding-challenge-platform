@@ -1,5 +1,6 @@
 from math import factorial
 
+
 # https://en.wikipedia.org/wiki/Binomial_coefficient
 def binomial(k, n):
     return factorial(n)//(factorial(k)*factorial(n-k))

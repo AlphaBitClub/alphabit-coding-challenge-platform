@@ -25,7 +25,8 @@ for _ in range(n):
 
     # Best Querie
     elif querie.startswith("Best"):
-        # Naive O(n) Solution: find the the book with the highest rating for each querie
+        # Naive O(n) Solution:
+        # find the the book with the highest rating for each querie
         best_book = max(book_stack, key=itemgetter(1))
         # print "<book_name> <rating>"
         print("{} {}".format(*best_book))

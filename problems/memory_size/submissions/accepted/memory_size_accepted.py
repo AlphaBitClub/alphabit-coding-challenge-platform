@@ -10,6 +10,7 @@ def findMemorySize(memorySize):
         powerOfTwo <<= 1
     return powerOfTwo
 
+
 for i in range(0, n):
     dataSize = int(input())
     memSize += dataSize
