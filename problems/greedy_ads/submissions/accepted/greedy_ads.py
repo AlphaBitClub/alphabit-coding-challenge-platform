@@ -10,17 +10,17 @@ for _ in range(n):
     ch.append([])
     sums.append(0)
 
-s.extend(map(int,input().split(',')))
+s.extend(map(int, input().split(',')))
 
 # start_time = time.time()
 
-for i in sorted(s,reverse=True):
+for i in sorted(s, reverse=True):
     # get the index of the channel with the least sum of ad revenues
     index_min = min(range(len(sums)), key=sums.__getitem__)
-    # add the commercial to the channel with the minimum sum of revenues 
+    # add the commercial to the channel with the minimum sum of revenues
     ch[index_min].append(i)
     # update the sums table
-    sums[index_min]+=i
+    sums[index_min] += i
 
 print(ch)
 
