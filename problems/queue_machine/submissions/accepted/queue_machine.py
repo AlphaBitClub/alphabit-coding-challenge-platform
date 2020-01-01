@@ -11,9 +11,11 @@ def CANCEL(queue, n_order):
 
 def SHOW(queue, index):
     if index == "FIRST":
-        return queue[0]
+        print(queue[0])
+    elif index == "LAST":
+        print(queue[-1])
     else:
-        return queue[-1]
+        print_queue(queue)
 
 
 def NEXT(queue):
@@ -43,14 +45,11 @@ if __name__ == "__main__":
         if command == "NEW":
             ticket_number += 1
             queue = NEW(queue, ticket_number)
-            print(ticket_number)
         elif ("CANCEL" in command):
             n_order = int(command.split(' ')[1])
             queue = CANCEL(queue, n_order)
-            print_queue(queue)
         elif "SHOW" in command:
             index = command.split(' ')[1]
-            print(SHOW(queue, index))
+            SHOW(queue, index)
         else:
             queue = NEXT(queue)
-            print_queue(queue)
