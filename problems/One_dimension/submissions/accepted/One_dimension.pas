@@ -1,9 +1,10 @@
 program One_dimension;
 
-var n, m, i, j, matrixResult, Code:integer;
+var taille,n, m, i, j, matrixResult, Code:integer;
     oneDim, twoDim, indices:string;
 
 begin
+    readln(taille);
     readln(oneDim);
     readln(twoDim);
     readln(indices);
