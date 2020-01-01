@@ -5,6 +5,7 @@ Imagine using an old Nokia phone to write a message, you need to find out what m
 
 Input:
 ---
+Given n the length of the sequence
 Given a sequence of numbers separated by blank spaces.
 
 
@@ -14,6 +15,7 @@ corresponding message.
 
 Examples:
 ---
+11
 44 33 555 555 666 0 9 666 777 555 3333
 hello world
 
