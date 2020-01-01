@@ -5,19 +5,18 @@ The customer can
 2-Cancel it's order
 3- Consult the first customer In the queue
 4- Consult the last customer in the queue
+5-Consult all the customers in the queue
 The server can
-5- free the post and pass to the next customer
+6- free the post and pass to the next customer
 
 Commands types:
 1:new order ticket
 Add the number of ticket to the queue
 Input : NEW
-Output: the number of the ticket
 
 2:cancel the order
 Delete the number of the order from the queue
 Input: CANCEL n_of_order
-Output: print the queue
 
 3:consult the first customer in the queue:
 Print the ticket number of the first order on the queue
@@ -29,10 +28,14 @@ Print the ticket number of the last order on the queue
 Input: SHOW LAST
 output: n_of_last_order_in_the_queue
 
-5:pass to the next costumer
+5:Consult all the customers in the queue:
+Print the ticket number of the last order on the queue
+Input: SHOW ALL
+output: print all the queue
+
+6:pass to the next costumer
 Pop the first customer from the queue and put it in this post
 Input : NEXT
-Output : print the queue
 
 PS: When the queue is empty and you try to print it
 Just print 0
@@ -41,13 +44,15 @@ There won't be special cases like canceling an order while the queue is empty
 the first input is the number of commands
 Example:
 Input :
-14
+17
 NEW
 NEW
 NEW
+SHOW ALL
 NEXT
 NEW
 NEW
+SHOW ALL
 NEXT
 CANCEL 4
 SHOW FIRST
@@ -56,19 +61,11 @@ SHOW LAST
 NEXT
 NEXT
 NEXT
+SHOW ALL
 
 Output:
-1 /new ticket
-2 /new ticket
-3 /new ticket
-2 3 /current queue
-4 /new ticket
-5 /new ticket
-3 4 5 /current queue
-3 5 /current queue
-3 /first order in the queue
-6 /new ticket
-6 /last order in the queue
-5 6 /current queue
-6 /current queue
-0 /current queue
+1 2 3
+2 3 4 5
+3
+6
+0
