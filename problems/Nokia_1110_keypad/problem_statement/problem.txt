@@ -1,0 +1,20 @@
+Statement:
+---
+Imagine using an old Nokia phone to write a message, you need to find out what message would appear by typing a custom sequence.
+
+
+Input:
+---
+Given a sequence of numbers separated by blank spaces.
+
+
+Output:
+---
+corresponding message.
+
+Examples:
+---
+44 33 555 555 666 0 9 666 777 555 3333
+hello world
+
+note: 3333 is also considered as "d"
