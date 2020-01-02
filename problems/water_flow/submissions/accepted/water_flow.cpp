@@ -33,7 +33,7 @@ int main()
 	int the_valve;
 	the_valve = min_element(results, results + n_valves)-results+1;
 	
-	cout << the_valve;
+	cout << the_valve << endl;
 
 	return 0;
 }
