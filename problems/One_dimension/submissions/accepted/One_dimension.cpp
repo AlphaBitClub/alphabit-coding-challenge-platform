@@ -14,6 +14,6 @@ int main()
     int n,m,i,j;
     cin >> n >> m >> i >> j;
 
-    cout << oneDim[i*m+j];
+    cout << oneDim[i*m+j] << endl;
     return 0;
 }
