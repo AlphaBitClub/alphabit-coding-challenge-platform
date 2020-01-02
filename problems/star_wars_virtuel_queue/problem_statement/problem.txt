@@ -1,0 +1,17 @@
+Star Wars: The Rise of Skywalker is going to be premiered in your city and EVERYONE want to watch it, but the places are so limited !!!.
+Your local cinema introduced a virtual queue to avoid the chaos, this allows users to pre-order tickets at their website once they go on sale.
+given a number n, print the sequence of n steps in which the queue gets filled starting from the pre-order of the first ticket.
+
+INPUT:
+A single integer,n, denoting the size of the sequence.
+
+OUTPUT:
+Print the sequence of n steps, using 0s and 1s. Observe that it's base and height are both equal to n.
+
+Sample Input: 
+4
+Sample Output:
+0001
+0011
+0111
+1111
