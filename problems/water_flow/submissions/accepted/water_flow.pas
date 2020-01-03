@@ -1,8 +1,8 @@
 program water_flow;
 
-var flow,n_valves,i:integer;
+var flow, n_valves, i:integer;
     //dynamic arrays
-    valves_bandwidth,delays: array of integer;
+    valves_bandwidth, delays: array of integer;
     results: array of real;
 
 //function to get the index of the min value of an array
