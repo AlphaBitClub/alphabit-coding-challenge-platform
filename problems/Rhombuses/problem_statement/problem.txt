@@ -1,0 +1,16 @@
+Statement:
+---
+How many rhombuses in the given shape  
+
+Input:
+---
+n the number of rhombuses in each side of the shape
+
+Examples:
+---
+n == 2, output == 5
+n == 3, output == 14
+
+Solution
+---
+the sum from i:=1 to n of i^2 
