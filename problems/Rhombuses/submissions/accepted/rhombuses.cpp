@@ -6,6 +6,6 @@ int main(int argc, char const *argv[])
 {
     long n;
     cin >> n;
-    printf("%ld\n", n * (n + 1) * (2 * n + 1) / 6);
+    cout << n * (n + 1) * (2 * n + 1) / 6 << endl;
     return 0;
 }
