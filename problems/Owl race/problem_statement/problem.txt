@@ -1,0 +1,24 @@
+# Statement
+
+As a part of the Magizoology class (Magizoology is the study of magical creatures), Harry is training his owl to become the fastest so he wins the owl race by the end of the year.
+in order to achieve that he is training two owls: 
+- the first owl starts at location x1 and flies at the rate of v1 meters/sec.
+- the second owl starts at location x2 and flies at the rated of v2 meters/sec.
+You must help harry to figure it out if it's possible that an owl will catch up to the other at some point during the race or not. if it's possible return YES, otherwise return NO.
+
+## Input
+A line of four values representing each of x1, v1, x2 and v2. 
+
+## Output
+YES if an owl can catch up to the other; otherwise print NO.
+
+
+## Sample input:
+0,2,3,1 
+## Sample output:
+YES
+
+## Sample input:
+0,3,1,4
+## Sample output:
+NO
