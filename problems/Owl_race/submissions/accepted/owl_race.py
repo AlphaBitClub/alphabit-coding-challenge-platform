@@ -11,6 +11,6 @@ def owl_race(x1, v1, x2, v2):
             return "NO"
 
 
-x1, v1, x2, v2 = map(int, input().split(','))
+x1, v1, x2, v2 = map(int, input().split())
 
 print(owl_race(x1, v1, x2, v2))
