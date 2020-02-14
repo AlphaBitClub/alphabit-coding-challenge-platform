@@ -1,0 +1,35 @@
+# Statement
+# Statement
+These are dark days, Voldemort and his evil army took over Hogwarts castle.
+In order for our heroes to take their castle back, they have to destroy the 8 towers in which powerful evil creatures took place to defend their wicked reign.
+Harry is only man for the job, he rode his injured dragon in a last hope attack to destroy the towers. each time harry shoots one; his wounded dragon looses altitude. The evil guards can't hurt them as long as they are flying higher than the tallest tower of the eight.
+Help harry to find the right order in which he'll destroy the towers. 
+
+## Constraints:
+- Number of towers 8.
+- 1<= Towers height <= 8.
+- The dragon initial altitude: 9.
+
+## Input
+A single line of 8 values denoting the length of each tower.  
+
+## Output
+The order of towers Harry has to shoot, otherwise "Hogwarts is down" If there is no possible way to win this battle.
+
+## Sample input:
+1,2,3,4,5,6,7
+
+## Sample output:
+7
+6
+5
+4
+3
+2
+1
+
+## Sample input:
+1 2 3 6 7 8 7 6
+
+## Sample output:
+Hogwarts is down
