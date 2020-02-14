@@ -1,0 +1,15 @@
+Problem 1: digit square
+---
+
+Statement
+---
+given an integer N, try to square each digit and output the value
+
+
+Input
+---
+A single line that contains a positive integer number N.
+
+Output
+---
+A single line that contains the square of every digit in N.
