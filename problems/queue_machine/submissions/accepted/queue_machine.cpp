@@ -5,8 +5,7 @@
 
 using namespace std;
 
-void showdq(deque <int> g,string s,deque <int> :: iterator it) 
-{	
+void showdq(deque <int> g,string s,deque <int> :: iterator it) {	
 	if(g.size()){
 		if(s.compare("ALL")==0){ 
     		for (it = g.begin(); it != g.end(); ++it) 
