@@ -1,0 +1,20 @@
+Statement
+---
+Harry is working on a magic potion, this potion have a spreading factor equal to 2, it works by throwing it on one opponent ,
+ the magic will spread to 2 other opponents each time one of them is infected, this spreading will go on for **g** generation, each opponent will be injured with a magic damage equals to the number of the generation he is part of, Harry wants to know the sum of all the damage he dealt to all his  opponents 
+
+ps: the very first infected opponent is part of the generation 1
+
+input
+---
+g: the number of generations
+
+output
+---
+the sum of all the damage he dealt
+
+
+example
+---
+- input: 3
+- output:  17
