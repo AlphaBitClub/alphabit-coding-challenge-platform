@@ -1,0 +1,17 @@
+Practice Problem 1:  Harry Potter
+---
+
+Statement
+---
+Welcome to Alphabit coding challenge 2.0, this edition’s theme is Harry Potter, you will start exploring the platform with this small challenge.
+Print “Harry Potter” using one of these programming languages : Pascal, C, C++ , Java , Go or Python 2/3 and get yourself warmed up and ready for the upcoming challenges !
+
+
+Input
+---
+No Input for this problem.
+
+Output
+---
+You will print a single line contains "Harry Potter".
+Note: don’t print the the double quotes (").
