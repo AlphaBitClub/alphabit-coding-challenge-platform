@@ -10,7 +10,7 @@ for _ in range(n):
     ch.append([])
     sums.append(0)
 
-s.extend(map(int, input().split(',')))
+s.extend(map(int, input().split(" ")))
 
 # start_time = time.time()
 
@@ -22,7 +22,10 @@ for i in sorted(s, reverse=True):
     # update the sums table
     sums[index_min] += i
 
-print(ch)
+result = ""
+for c in ch:
+    result += str(c).replace(",", "")
+print(result)
 
 # print("--- %s seconds ---" % (time.time() - start_time))
 
